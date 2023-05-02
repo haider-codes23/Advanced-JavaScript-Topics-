@@ -8,7 +8,7 @@
 
 
 
-/ function declaration 
+// function declaration 
 function walk() {
   console.log('walk');
 }

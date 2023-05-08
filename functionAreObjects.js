@@ -30,10 +30,12 @@ function createCircle(radius, location) {
     
 }
 
-const anotherCircle = new createCircle(1, {x: 1, y: 2});
-createCircle.call({},1, {x: 1, y: 2});
-console.log(anotherCircle.constructor);
-console.log(createCircle.call({},1 , {x: 1, y: 2}));
+// const anotherCircle = new createCircle(1, {x: 1, y: 2});
+// createCircle.call({},1, {x: 1, y: 2});
+// console.log(anotherCircle.constructor);
+const circle = {};
+createCircle.call(circle ,1 , {x: 1, y: 2});
+console.log(circle);
 
-console.log(anotherCircle);
-console.log(createCircle.call({},1, {x: 1, y: 2}));
+// console.log(anotherCircle);
+// console.log(createCircle.call({},1, {x: 1, y: 2}));

@@ -19,13 +19,15 @@ for (let key in circle) {
 
 }
 circle.color = 'green';
-console.log(circle);
-console.log(anotherCircle);
+// console.log(circle);
+// console.log(anotherCircle);
 
-const yetAnotherCircle = Object.assign({}, {color:"red"}, circle);
+const yetAnotherCircle = Object.assign({}, {color:"red"});
 
-console.log(yetAnotherCircle);
+// console.log(yetAnotherCircle);
 
 const yetYetAnotherCircle = {...yetAnotherCircle};
+yetYetAnotherCircle.size = "small";
 
+console.log(yetAnotherCircle);
 console.log(yetYetAnotherCircle);
